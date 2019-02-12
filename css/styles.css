@@ -1,0 +1,560 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Cabin", Arial, Geneva, sans-serif;
+  background-image: url(../img/clouds.png);
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Niconne", cursive;
+  font-weight: normal;
+  color: #c80060;
+}
+.wrapper {
+  margin: 0 auto;
+}
+article img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 250px;
+}
+/* nav {
+  background: url(../scallop.png) repeat-x;
+} */
+nav ul.full-width {
+  list-style-type: none;
+  background-color: #e6bf98;
+  padding: 0.75em;
+  margin: 12px 0 0 0;
+  border-bottom: 3px solid #cc8850;
+  overflow: auto;
+}
+/* splits nav into 2 columns
+http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
+nav li:nth-child(even) {
+  width: 50%;
+  float: right;
+  padding: 0.5em;
+}
+nav li:nth-child(odd) {
+  width: 50%;
+  float: left;
+  padding: 0.5em;
+}
+nav a {
+  color: #c80060;
+  text-decoration: none;
+  display: block;
+  padding-left: 3.333333%;
+}
+nav a:hover {
+  color: #00c4c7;
+}
+
+.floatright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+[class*="sidebar"] {
+  border: 1px solid #00c4c7;
+  border-radius: 10px;
+}
+[class*="sidebar"] h3 {
+  margin: 0;
+  color: white;
+  background-color: #00c4c7;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 0.5em;
+}
+[class*="sidebar"] img {
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  max-width: 250px;
+  display: block; /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
+}
+.sidebar-secondary {
+  border-color: #c80060;
+}
+.sidebar-secondary h3 {
+  background-color: #c80060;
+}
+blockquote {
+  padding: 0em;
+  margin: 0;
+}
+blockquote p,
+blockquote cite {
+  padding: 0 1em;
+}
+blockquote cite {
+  text-transform: uppercase;
+  font-style: normal;
+  padding-bottom: 1em;
+  display: block;
+}
+footer {
+  background-color: #00cdd1;
+  color: white;
+  clear: both;
+  margin: 0 0.5em 3em 0.5em;
+}
+footer p {
+  text-align: center;
+}
+footer img {
+  width: 52px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Code for the Home Page */
+.home-page-container {
+  background-color: #fff6e0;
+  padding: 1em;
+}
+
+.home-quote {
+  text-transform: uppercase;
+  display: block;
+  font-style: normal;
+}
+
+.home-button,
+.form-button {
+  background-color: #c80060;
+  color: white;
+  font-family: "Niconne", cursive;
+  border: none;
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin-top: 1em;
+  border-radius: 2em;
+}
+
+/* Code for the Home page ends here */
+
+/* Code for the menu page starts here */
+.menu-page-container,
+.catering-page-container,
+.contact-page-container {
+  background-color: #fff6e0;
+  padding: 2em;
+}
+
+.menu-page-img {
+  border-radius: 5%;
+}
+
+.menu-page-caption {
+  font-family: "Cabin", Arial, Geneva, sans-serif;
+  color: #000b28;
+  font-size: 0.8em;
+}
+
+.specialty-heading {
+  color: #000b28;
+  font-family: "Cabin", Arial, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.specialty-heading > p {
+  font-weight: normal;
+}
+
+/* Code for the menu page ends here */
+
+/* Code for the catering page starts here */
+/* Mostly the same as for the menu page except for floats */
+.pie-buffet {
+  float: right;
+  border-radius: 1em;
+  margin-left: 2%;
+}
+
+/* Code for the catering page ends here */
+
+/* Code for the gallery starts here */
+.gallery-page-container {
+  background-color: #fff6e0;
+  padding: 2em;
+}
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.gallery-items {
+  flex: auto;
+}
+
+.gallery-items img {
+  width: 100%;
+}
+
+/* Code for the gallery ends here */
+
+/* Code for the contact form starts here */
+/* Grid for this page is coded in menu */
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-weight: bold;
+  color: #c80060;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+fieldset.contact {
+  margin-bottom: 2em;
+}
+
+form input {
+  width: 265px;
+}
+
+fieldset p {
+  font-weight: bold;
+}
+
+.radio,
+.checkbox {
+  width: 5px;
+}
+
+.inner-label {
+  padding-top: 0;
+  font-weight: normal;
+}
+
+.filling {
+  padding-top: 0;
+  font-weight: normal;
+}
+
+textarea {
+  display: block;
+  width: 500px;
+  height:200px;
+}
+
+/* Code for the contact form ends here */
+
+/* grid system */
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 2%;
+  background-color: #fff6e0;
+  padding: 2em;
+}
+
+.sidebar-primary,
+.sidebar-secondary {
+  margin: 3em 0em;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 550px) {
+  .wrapper {
+    width: 97%;
+    max-width: 767px;
+  }
+
+  nav li,
+  nav li:nth-child(even),
+  nav li:nth-child(odd) {
+    display: inline-block;
+    float: none;
+    width: auto;
+    padding: 0;
+  }
+  nav a {
+    padding: 0em 1em 0em 1em;
+  }
+  [class*="col-"] {
+    margin-left: 4%;
+    margin-right: 0%;
+  }
+
+  .wrapper-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .main-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .aside-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .aside-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+    margin-bottom: 5%;
+  }
+
+  .sidebar-primary {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .sidebar-secondary {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  /* Code for the home page */
+  .pie-feast-image {
+    background: url(../img/pie-feast-700.jpg) no-repeat;
+    height: 150px;
+    width: 100%;
+  }
+
+  .home-page-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 1%;
+    grid-column-gap: 10%;
+    padding: 0.5em;
+  }
+
+  .home-article-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .home-article-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .home-article-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .home-article-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .home-button {
+    margin-top: 0.4em;
+  }
+
+  .home-article-1 > .home-button {
+    margin-top: 15%;
+  }
+
+  /* Code for the home page ends here */
+
+  /* Code for the menu page */
+
+  .menu-column-2,
+  .catering-column-2,
+  .contact-column-2 {
+    display: grid;
+    grid-column-gap: 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .menu-column-2 > .sidebar-primary,
+  .catering-column-2 > .sidebar-primary,
+  .contact-column-2 > .sidebar-primary {
+    grid-column: 1/2;
+  }
+
+  .menu-column-2 > .sidebar-secondary,
+  .catering-column-2 > .sidebar-secondary,
+  .contact-column-2 > .sidebar-secondary {
+    grid-column: 2/3;
+  }
+
+  /* Code for the menu page ends here */
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 850px) {
+  .wrapper {
+    width: 97%;
+    max-width: 1200px;
+    float: none;
+  }
+  h2 {
+    font-size: 3em;
+    border-bottom: 2px dotted #c80060;
+  }
+  h3 {
+    font-size: 2em;
+  }
+
+  nav li,
+  nav li:nth-child(even),
+  nav li:nth-child(odd) {
+    display: inline-block;
+    float: none;
+    width: auto;
+    padding: 0;
+  }
+  nav a {
+    padding: 0em 1em;
+  }
+
+  .wrapper-grid {
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 5%;
+    padding-bottom: 3em;
+  }
+  .main-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .aside-text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .aside-wrapper {
+    display: block;
+  }
+
+  .sidebar-primary,
+  .sidebar-secondary {
+    margin: 2em 1em;
+  }
+
+  /* Code for the Home Page  */
+  .pie-feast-image {
+    background: url(../img/pie-feast-1250.jpg) no-repeat;
+    height: 190px;
+    width: 100%;
+  }
+
+  .home-page-grid-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2%;
+  }
+
+  .home-article-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .home-article-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .home-article-3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .home-article-4 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  /* Code for the Home Page ends here */
+
+  /* Code for the menu page */
+
+  .menu-column-2,
+  .catering-column-2,
+  .contact-column-2 {
+    display: block;
+  }
+
+  .menu-grid-wrapper,
+  .catering-grid-wrapper {
+    display: grid;
+    grid-column-gap: 3%;
+    grid-template-columns: 3fr 1fr;
+    grid-template-columns: auto;
+  }
+
+  .menu-column-1,
+  .catering-column-1,
+  .contact-column-1 {
+    grid-column: 1/4;
+  }
+
+  .menu-column-2,
+  .catering-column-2,
+  .contact-column-2 {
+    grid-column: 4/5;
+  }
+
+  .menu-page-caption {
+    font-size: 0.5em;
+  }
+
+  .menu-page-container > h2,
+  .catering-page-container > h2,
+  .contact-page-container > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Code for the menu page ends here */
+
+  /* Code for the catering page */
+  .pie-buffet {
+    margin-top: 3%;
+  }
+  /* Code for the catering page ends here */
+
+  /* Code for the contact page */
+  .contact-grid-wrapper {
+    display: grid;
+    grid-column-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "column1 column1 . column2";
+  }
+
+  .contact-column-1 {
+    grid-area: column1;
+  }
+
+  .contact-column-2 {
+    grid-area: column2;
+  }
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pie in the Sky Bakery, Springdale, VT</title>
+<link href='http://fonts.googleapis.com/css?family=Cabin|Niconne' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrapper">
+	<header class="row">
+		<a href="/"><img src="img/logo.png" alt="Pie in the Sky Bakery, Springdale, VT. Click for home."></a>
+	</header>
+	<nav class="row">
+		<ul class="full-width">
+			<li><a href="./home.html">Home</a></li>
+			<li><a href="./menu.html">Menu</a></li>
+			<li><a href="./catering.html">Catering</a></li>
+			<li><a href="./pie gallery.html">Pie Gallery</a></li>
+			<li><a href="./index.html">History</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+		</ul>
+    </nav>
+    <div class="contact-page-container">
+        <h2>Pie Order Form</h2>
+        <div class="contact-grid-wrapper">
+            <div class="contact-column-1">
+            <p>Fill out the form below to place an order for one of our wonderful pies. </p>
+           <form>
+               <fieldset class="contact">
+                   <legend>Your contact information</legend>
+                   <label for="name">Your name</label>
+                    <input id="name" type="text" autofocus="">
+                   <label for="phone">Phone number</label>
+                    <input id="phone" type="tel" placeholder="Don't forget the area code!">
+                   <label for="email">Email</label>
+                    <input id="email" type="email">
+                   <label for="date">Requested pickup date</label>
+                   <input id="date" type="date">
+               </fieldset>
+               <fieldset class="pie">
+                   <legend>About your pie</legend>
+                   <label for="qty">How many pies would you like?</label>
+                   <input type="number" min="1" max="10" id="qty">
+                   <p>What type of bottom crust?</p>
+                   <label class="inner-label">
+                       <input type="radio" class="radio" value="classic" name="bottom">
+                       Classic
+                   </label>
+                   <label class="inner-label">
+                        <input type="radio" class="radio" value="gfclassic" name="bottom">
+                        Gluten-Free Classic 
+                    </label>
+                    <p>What type of top crust?</p>
+                   <label class="inner-label">
+                       <input type="radio" class="radio" name="top" value="classicfc">
+                       Classic Full Crust 
+                   </label>
+                   <label class="inner-label">
+                       <input type="radio" class="radio" name="top" value="lattice">
+                       Lattice
+                   </label>
+                   <label class="inner-label">
+                       <input type="radio" class="radio" name="top" value="gffull">
+                       Gluten-Free Full 
+                   </label>
+                   <label class="inner-label">
+                       <input type="radio" class="radio" name="top" value="gflattice">
+                       Gluten-Free Lattice 
+                   </label>
+                   <label class="inner-label">
+                       <input type="radio" class="radio" name="top" value="no top">
+                       No top crust 
+                   </label>
+                   <label for="filling">What type of filling?</label>
+                   <input type="text" id="filling">
+                   <label class="filling">
+                       <input type="checkbox" class="checkbox">
+                       Make the filling sugar-free 
+                   </label>
+                   <label>Special requests: 
+                       <textarea placeholder="Any additional instructions for us?"></textarea>
+                   </label>
+                   <button class="form-button">Submit</button>
+               </fieldset>
+           </form>
+           </div>
+            <div class="contact-column-2">
+                <aside class="sidebar-primary">
+                    <h3>Testimonials</h3>
+                         <blockquote>
+                             <p>When we got engaged, Michael and I knew we didn't want to usual wedding cake. Our guests were thrilled to have something different. Who knew pies could be so elegant? </p>
+                             <cite>Madeleine Walker</cite>
+                            </blockquote>
+                </aside>
+                <aside class="sidebar-secondary">
+                    <h3>Pie of the Month</h3>
+                    <img src="img/pi-day.jpg" alt="Pi Day Pie with Strawberry filling.">
+                </aside>
+            </div>
+        </div>
+    </div>
+	<footer class="row">
+			<p>Copyright 2017, Pie in the Sky Bakery &#183; 34 Main Street &#183; Springdale, VT &#183; <a href="tel:802-555-7437">(802) 555-PIES</a></p>
+			<p>
+				<a href="http://www.twitter.com" target="_blank"><img src="img/twitter1.png" alt="Twitter."></a>
+				<a href="http://www.pinterest.com" target="_blank"><img src="img/pin2.png" alt="Pinterest."></a>
+				<a href="http://www.tumblr.com" target="_blank"><img src="img/tumblr3.png" alt="Tumblr."></a>
+				<a href="http://www.instagram.com" target="_blank"><img src="img/insta4.png" alt="Instagram."></a>
+				<a href="http://www.facebook.com" target="_blank"><img src="img/fb5.png" alt="Facebook."></a>
+			</p>
+	</footer>
+
+</div>
+</body>
+</html>
